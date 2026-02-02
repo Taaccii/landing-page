@@ -2,6 +2,10 @@ body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 50px;
 }
 
 .header-container {
@@ -21,41 +25,131 @@ body {
   display: flex;
   justify-content: flex-start;
   color: #f9faf8;
-  font-size: 24px;
-  
+  font-size: 24px; 
 }
 
 .links {
   display: flex;
   justify-content: flex-start;
   gap: 25px;
-
 }
 
 .descritpion-container {
   display: flex;
-  justify-content: center;
+  margin: 48px;
+  padding: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-text {
   font-size: 48px;
   font-weight: 900;
   color: #f9faf8;
+
 }
 
 .subtext {
   font-size: 18px;
   color: #e5e7eb;
+  margin-bottom: 10px;
 }
 
 button {
   background-color: #3882f6;
+  color: #f9faf8;
+  border: #1f2937;
+  border-radius: 5px;
+  width: 70px;
 }
 
 image {
   width: 600px;
 }
 
+.card-container {
+  background-color: #f9faf8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-title{
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-image {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #3882f6;
+  border-radius: 5px;
+}
+
+.message-container {
+  background-color: #e5e7eb;
+  padding: 40px 80px 40px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  font-size: 36px;
+  font-weight: 300;
+  color: #1f2937;
+  text-align: left;
+}
+
+.signature {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  font-weight: bold;
+  margin-right: 100px;
+  margin-top: 5px;
+}
+
+.signup-container {
+  display: flex;
+  background-color: #3882f6;
+  width: 550px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-card .button {
+  border: 2px solid #e5e7eb;
+  border-radius: 5px;
+  width: 70px;
+
+}
 ul {
   margin: 0;
   padding: 0;
