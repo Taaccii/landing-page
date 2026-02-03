@@ -27,6 +27,12 @@ img {
   flex-shrink: 0;
 }
 
+.header-image {
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border: #787a7f 1px solid;
+  box-shadow: #000000 9px 9px 20px 6px ;
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -57,15 +63,18 @@ img {
 .main-container {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 .main-text {
   font-size: 48px;
   font-weight: 900;
   color: #f9faf8;
-
 }
 
+span {
+  color: #3882f6;
+}
 .subtext {
   font-size: 18px;
   color: #e5e7eb;
@@ -80,6 +89,7 @@ img {
   width: 120px;
   height: 25px;
   text-align: center;
+  box-shadow: #e5e7eb 2px 2px 60px 5px;
 }
 
 
