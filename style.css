@@ -14,6 +14,11 @@ main {
   gap: 50px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .header-container {
   background-color: #1f2937;
   display: flex;
@@ -67,21 +72,20 @@ main {
   margin-bottom: 10px;
 }
 
-button {
+.button {
   background-color: #3882f6;
-  color: #f9faf8;
+  color: white;
   border: #1f2937;
   border-radius: 5px;
-  width: 80px;
+  width: 120px;
   height: 25px;
+  text-align: center;
 }
 
-image {
-  width: 600px;
-}
 
 .card-container {
   background-color: white;
+  flex-shrink: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -100,7 +104,8 @@ image {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .card-text {
@@ -112,8 +117,9 @@ image {
 .card-image {
   height: 200px;
   width: 200px;
-  border: 2px solid #3882f6;
+  border: 2px solid #1f2937;
   border-radius: 10px;
+  box-shadow: #1f2937 9px 9px 1px 10px;
 }
 
 .message-container {
@@ -127,7 +133,8 @@ image {
   font-size: 36px;
   font-weight: 300;
   color: #1f2937;
-  text-align: left;
+  padding: 30px;
+  margin: 30px 60px;
 }
 
 .bold-text {
@@ -141,7 +148,6 @@ image {
   flex-direction: row-reverse;
   font-weight: bold;
   margin-right: 100px;
-  margin-top: 5px;
 }
 
 .signup-container {
@@ -154,22 +160,25 @@ image {
   padding: 30px 60px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50PX;
 }
 
 .sign-up-card {
   display: flex;
-  flex-wrap: wrap;
-  margin: 20px;
+  flex-direction: column;
+  margin: 50px;
   justify-content: space-between;
+
 }
 
-.sign-up-card .button {
+.signup-container .button {
   border: 2px solid #e5e7eb;
   border-radius: 5px;
-  width: 80px;
+  width: 120px;
   height: 25px;
+  color: white;
+  text-align: center;
   flex-shrink: 0;
-
 }
 
 
