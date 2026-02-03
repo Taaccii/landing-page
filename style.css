@@ -1,9 +1,15 @@
 body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 50px;
 }
@@ -12,6 +18,8 @@ body {
   background-color: #1f2937;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .navbar {
@@ -36,8 +44,9 @@ body {
 
 .descritpion-container {
   display: flex;
-  margin: 48px;
+  margin: 80px;
   padding: 10px;
+  justify-content: space-around;
 }
 
 .main-container {
@@ -63,7 +72,8 @@ button {
   color: #f9faf8;
   border: #1f2937;
   border-radius: 5px;
-  width: 70px;
+  width: 80px;
+  height: 25px;
 }
 
 image {
@@ -71,11 +81,11 @@ image {
 }
 
 .card-container {
-  background-color: #f9faf8;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 .card-title{
@@ -95,13 +105,15 @@ image {
 
 .card-text {
   text-align: center;
+  font-size: 18px;
+  color: #1f2937;
 }
 
 .card-image {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border: 2px solid #3882f6;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .message-container {
@@ -118,6 +130,11 @@ image {
   text-align: left;
 }
 
+.bold-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
 .signature {
   display: flex;
   justify-content: flex-start;
@@ -133,23 +150,29 @@ image {
   width: 550px;
   height: 50px;
   border: 2px solid white;
-  border-radius: 5px;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 30px 60px;
   justify-content: center;
   align-items: center;
 }
 
 .sign-up-card {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-between;
 }
 
 .sign-up-card .button {
   border: 2px solid #e5e7eb;
   border-radius: 5px;
-  width: 70px;
+  width: 80px;
+  height: 25px;
+  flex-shrink: 0;
 
 }
+
+
 ul {
   margin: 0;
   padding: 0;
@@ -160,4 +183,15 @@ a {
   text-decoration: none;
   color: #e5e7eb;
   font-size: 18px;
+}
+
+.footer {
+  background-color: #1f2937; 
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+  padding: 30px;
+  margin-top: auto;
 }
